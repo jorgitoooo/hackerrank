@@ -1,7 +1,16 @@
+CC=gcc
 GCC=g++
-FLAGS=-std=c++11
+CPPFLAGS=-std=c++11
+CFLAGS= -Wall -Wextra -Os
 OFILE=exec
+GCCCOMPILE= $(GCC) $(CPPFLAGS) $(CFLAGS)
+CCCOMPILE= $(CC) $(CFLAGS)
+
 acp:
-	$(GCC) $(FLAGS) abstract_classes_polymorphism.cpp -o $(OFILE)
+	 $(GCCCOMPILE) abstract_classes_polymorphism.cpp -o $(OFILE)
+
+t:
+	 $(CCCOMPILE) tokenizer.c -o $(OFILE)
+
 clean:
 	rm $(OFILE)
