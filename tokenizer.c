@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "./c_headers.h"
 
 void tokenizer(char *str, char delim)
 {
