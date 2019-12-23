@@ -14,6 +14,8 @@ mad:
 
 t:
 	 $(CCCOMPILE) tokenizer.c -o $(OFILE)
+pos:
+	 $(CCCOMPILE) permutations_of_strings.c -o $(OFILE)
 
 clean:
 	rm $(OFILE)
