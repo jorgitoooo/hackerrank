@@ -16,5 +16,9 @@ pos:
 	 $(CCCOMPILE) permutations_of_strings.c -o $(OFILE)
 vf:
 	 $(CCCOMPILE) variadic_functions.c -o $(OFILE)
+std:
+	 $(CCCOMPILE) structuring_the_document.c -o $(OFILE)
+run:
+	./$(OFILE)
 clean:
 	rm $(OFILE)
